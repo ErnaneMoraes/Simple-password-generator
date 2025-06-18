@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Senhas</title>
+    <link rel="icon" href="./src/key-solid.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Gerador de Senhas</h1>
+        <div style="margin-bottom: 20px;">
+            <label for="length">Quantidade de caracteres:</label>
+            <input type="number" id="length" min="1" max="25" placeholder="" value="10" required>
+        </div>
+
+        <div class="options">
+            <label><input type="checkbox" id="uppercase" checked> Primeira letra maiúscula</label>
+            <label><input type="checkbox" id="special" checked> Incluir caractere especial</label>
+            <label><input type="checkbox" id="no-repeat" checked> Não repetir caracteres</label>
+        </div>
+
+        <button onclick="generatePassword()">Gerar Senha</button>
+
+        <input type="text" id="passwordOutput" class="output" style="display: none;">
+        <div class="actions">
+            <button id="copyButton" style="display: none;" onclick="copyPassword()">Copiar</button>
+            <button id="clearButton" style="display: none;" onclick="clearPassword()">Limpar</button>
+        </div>
+        
+    </div>
+    <div class="footer">
+        <div class="footer-text">
+            Este site não armazena ou compartilha suas senhas. Use-o apenas para gerar senhas temporárias e realize a troca para uma senha segura em seus serviços. Source: https://github.com/ErnaneMoraes/Password-generator <br>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

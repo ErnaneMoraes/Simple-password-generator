@@ -1,0 +1,117 @@
+
+body {
+    display: flex;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 400px; 
+    height: 400px; 
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #007BFF;
+}
+
+.options label {
+    display: block;
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #333;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#passwordOutput {
+    display: none;
+    margin-top: 20px;
+    padding: 10px;
+    border: 2px solid #007BFF; 
+    border-radius: 5px;
+    background-color: #f0f8ff; 
+    color: #000; 
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.output {
+    display: none;
+    margin: 20px auto;
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+    width: 80%; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.actions {
+    display: flex;              
+    justify-content: center;     
+    align-items: center;         
+    gap: 10px;                   
+    width: 100%;                 
+    position: absolute;          
+    bottom: 25px;                  
+    left: 50%;                   
+    transform: translateX(-50%); 
+}
+
+.footer {    
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    color: rgb(104, 104, 104);
+    overflow: hidden;
+}
+
+.footer-text {
+    white-space: nowrap;
+    animation: scroll-text 60s linear infinite;
+}
+
+.footer:hover .footer-text {
+    animation-play-state: paused;
+}
+
+@keyframes scroll-text { 
+    from {
+        transform: translateX(90%); 
+    }
+    to {
+        transform: translateX(-100%); 
+    }
+}
