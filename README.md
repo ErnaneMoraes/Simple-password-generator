@@ -1,27 +1,12 @@
-# Gerador de Senhas
+# React + Vite
 
-- Este site foi criado com finalidade de estudo e prática de programação.
-- Trata-se de um site gerador de senhas aleatórias de baixa complexidade
-- O site não armazena ou compartilha as senhas geradas.
-- É recomendada utilização apenas para gerar senhas temporárias e posteriormente realizar a troca para uma senha segura em seus serviços. 
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Funcionalidades
+Currently, two official plugins are available:
 
-- Defina a quantidade de caracteres.
-- Opções personalizadas:
-  - Primeira letra maiúscula
-  - Incluir caractere especial
-  - Não repetir caracteres
-- Botão de **Copiar** para facilitar o uso da senha.
-- Botão de **Limpar** para redefinir o campo.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Preview
+## Expanding the ESLint configuration
 
- - O site está hospedado na plataforma Render com integração à este repositório e online em https://pswd-gen.onrender.com/
-
-## Tecnologias utilizadas até o momento
-
-- HTML
-- CSS
-- JavaScript
-
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.

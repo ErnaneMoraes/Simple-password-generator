@@ -1,32 +1,34 @@
-
-body {
-    display: flex;
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
+/* 1. HTML e Body ocupando 100% da altura para centralizar tudo */
+html, body {
     margin: 0;
     padding: 0;
+    height: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    height: 100vh;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    background-color: #7d7dd4;
 }
 
+/* 2. Container centralizado */
 .container {
     width: 400px; 
-    height: 400px; 
+    height: 400px;
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
-    position: relative;
 }
 
+/* 3. Título */
 h1 {
     margin-bottom: 20px;
     color: #007BFF;
 }
 
+/* 4. Opções de checkbox */
 .options label {
     display: block;
     margin: 10px 0;
@@ -34,6 +36,7 @@ h1 {
     color: #333;
 }
 
+/* 5. Botão de ação */
 button {
     padding: 10px 20px;
     font-size: 1rem;
@@ -49,6 +52,7 @@ button:hover {
     background-color: #0056b3;
 }
 
+/* 6. Campo de saída da senha */
 #passwordOutput {
     display: none;
     margin-top: 20px;
@@ -62,6 +66,7 @@ button:hover {
     text-align: center;
 }
 
+/* 7. Saída opcional */
 .output {
     display: none;
     margin: 20px auto;
@@ -74,30 +79,30 @@ button:hover {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+/* 8. Ações alinhadas horizontalmente */
 .actions {
     display: flex;              
     justify-content: center;     
     align-items: center;         
     gap: 10px;                   
     width: 100%;                 
-    position: absolute;          
-    bottom: 25px;                  
-    left: 50%;                   
-    transform: translateX(-50%); 
+    margin-top: 20px;           
 }
 
+/* 9. Rodapé fixo */
 .footer {    
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
+    height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 20px;
-    color: rgb(104, 104, 104);
-    overflow: hidden;
+    color: black;
+    background-color: transparent;
 }
 
+/* 10. Texto do rodapé com animação */
 .footer-text {
     white-space: nowrap;
     animation: scroll-text 60s linear infinite;
