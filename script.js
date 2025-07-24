@@ -6,10 +6,10 @@ function generatePassword() {
         return;
     }
 
-    const specialCharacters = ['@', '#', '*']; //apenas 3 opções de caracteres especiais
-    const numbers = '123456789'; //não tem o zero para não ser confundido com a letra O
-    const letters = 'abcdefghijkmnopqrstuvwxyz'; //removido L para nao gerar confusão com i maiusculo
-    const firstLetters = 'abcdefghjklmnopqrstuvwxyz'; //removido i para nao gerar confusão com l minusculo
+    const specialCharacters = ['@', '#', '*']; 
+    const numbers = '123456789'; 
+    const letters = 'abcdefghijkmnopqrstuvwxyz'; 
+    const firstLetters = 'abcdefghjklmnopqrstuvwxyz'; 
 
     let password = '';
     let usedChars = new Set();
@@ -20,12 +20,12 @@ function generatePassword() {
     } while (usedChars.has(firstChar));
 
      if (document.getElementById('uppercase').checked) {
-        password += firstChar; //se marcado uppercase, adiciona a letra maiúscula
+        password += firstChar; /
     } else {    
-        password += firstChar.toLowerCase(); //se não marcado, converte para minúscula
+        password += firstChar.toLowerCase(); 
      }
 
-    firstChar = firstChar.toLowerCase(); //Passa a 1 letra p/ minúscula p/ nao ser repetida
+    firstChar = firstChar.toLowerCase(); 
     usedChars.add(firstChar);
 
     for (let i = 1; i < length - 3; i++) { 
