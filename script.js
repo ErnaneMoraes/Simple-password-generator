@@ -20,7 +20,7 @@ function generatePassword() {
     } while (usedChars.has(firstChar));
 
      if (document.getElementById('uppercase').checked) {
-        password += firstChar; /
+        password += firstChar; 
     } else {    
         password += firstChar.toLowerCase(); 
      }
